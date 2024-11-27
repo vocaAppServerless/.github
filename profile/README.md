@@ -17,7 +17,7 @@ Lambda 기반 서버리스 단어 암기 웹사이트
 
 xxxx를 목표로 xxxx했다.
 
-### 시연 영상
+### Demo Video (Youtube)
 
 #### WAF Rule & Slack Alarm
 
