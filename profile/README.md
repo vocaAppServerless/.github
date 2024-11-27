@@ -20,7 +20,7 @@ xxxx를 목표로 xxxx했다.
 ### Demo Video (Youtube)
 
 #### WAF Rule & Slack Alarm
-
+![alt text](image.png)
 [![WAF Rule & Slack Alarm Video](/assets/img/waf_rule_and_slack_alarm_thumbnail.png)](https://www.youtube.com/watch?v=S6AAgXVevEw)
 
 #### HCP Terraform
