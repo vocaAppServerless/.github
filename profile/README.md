@@ -21,15 +21,18 @@ Lambda 기반 서버리스 단어 암기 웹사이트
 
 ![Architecture](/assets/img/architecture.png)
 
-### CI/CD Workflow - [Backend]
+### CI/CD - [Backend]
 
 ![Backend CI/CD](/assets/img/backend_ci_cd.png)
 
-### CI/CD Workflow - [Frontend]
+### CI/CD - [Frontend]
 
 ![Frontend CI/CD](/assets/img/frontend_ci_cd.png)
 
-### Logging Workflow
+### Logging
+
+- CloudWatch logs의 Subscription Filter를 사용해 ELK 클러스터로 로그 데이터 전송
+- Kibana 대시보드를 사용해 log group별, status별 로그 확인 가능
 
 ![Logging Workflow](/assets/img/log_monitoring.png)
 
