@@ -17,15 +17,11 @@ Lambda 기반 서버리스 단어 암기 웹사이트
 
 xxxx를 목표로 xxxx했다.
 
-### Demo Video (Youtube)
+### Demo Video (썸네일 클릭 - Youtube)
 
-#### WAF Rule & Slack Alarm
+**WAF Rule & Slack Alarm Demo** - <https://www.youtube.com/watch?v=S6AAgXVevEw>
 
-[![WAF Rule & Slack Alarm Video](/assets/img/waf_rule_and_slack_alarm_thumbnail.png)](https://www.youtube.com/watch?v=S6AAgXVevEw)
-
-#### HCP Terraform
-
-[ Terraform destroy -> apply -> frontend, backend ci/cd -> web endpoint -> 로그인 영상 추가 ]
+**HCP Terraform Demo** - [ Terraform destroy -> apply -> frontend, backend ci/cd -> web endpoint -> 로그인 영상 추가 ]
 
 ### Architecture
 
