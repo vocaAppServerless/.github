@@ -15,13 +15,13 @@ Lambda 기반 서버리스 단어 암기 웹사이트
 
 ## Infra
 
-xxxx를 목표로 xxxx했다.
+**HCP Terraform**을 **VCS(Version Control System)**와 연동하여 코드를 기반으로 AWS 리소스를 프로비저닝하고 관리
 
 ### Demo
 
-**WAF Rule & Slack Alarm Demo** - <https://www.youtube.com/watch?v=S6AAgXVevEw>
+**WAF Rule & Slack Alarm Demo** - <https://youtu.be/S6AAgXVevEw?si=OiLR3wfE36uTpHYU>
 
-**HCP Terraform Demo** - [ Terraform destroy -> apply -> frontend, backend ci/cd -> web endpoint -> 로그인 영상 추가 ]
+**HCP Terraform Demo** - <https://youtu.be/zg9rhHcf8w0?si=A6rGs7k0rcp9nD0u>
 
 ### Architecture
 
