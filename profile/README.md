@@ -15,7 +15,7 @@ Lambda 기반 서버리스 단어 암기 웹사이트
 
 ## Infra
 
-**HCP Terraform**을 **VCS(Version Control System)**와 연동하여 코드를 기반으로 AWS 리소스를 프로비저닝하고 관리
+**HCP Terraform**을 **VCS**(Version Control System)와 연동하여 코드를 기반으로 AWS 리소스를 프로비저닝하고 관리
 
 ### Demo
 
