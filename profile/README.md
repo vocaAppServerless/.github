@@ -17,11 +17,11 @@ Lambda 기반 서버리스 단어 암기 웹사이트
 
 ### Frontend Architecture💻
 #### Global State Management
-- Redux: Define global state in **store.ts**.
-- Static Data & Functions: Manage static variables, functions, and class constructors in **staticData.ts**.
-- Redux State Reference & Modification: Handle Redux state in the custom hook **useFuncs.ts**.
-- Queue Management: Manage the queue using useContext in **QueueContext.tsx**.
-- Authentication Functions: Modularize authentication logic in **auth.ts**.
+- **Redux**: Define global state in **store.ts**.
+- **Static Data & Functions**: Manage static variables, functions, and class constructors in **staticData.ts**.
+- **Redux State Access & Modification Functions**: Store general functions that require access to and modification of Redux state in the useFuncs.ts custom hook.
+- **Queue Management**: Manage the queue using useContext in **QueueContext.tsx**.
+- **Authentication Functions**: Modularize authentication logic in **auth.ts**.
 
 ### Backend Architecture💻
 #### Lambda Caching and DB Connection Optimization
@@ -38,7 +38,7 @@ Lambda 기반 서버리스 단어 암기 웹사이트
 
 ### Development/Production Environment Separation
 **Frontend**
-- **Development Environment**: Manage environment variables using **.env** and run local development with the **npm start** command.
+- **Development Environment**: Manage environment variables using **.env** and run local development with the **npm start**.
 - **Production Environment**: Utilize **AWS S3** and **Parameter Store** for secure and reliable deployment.
 
 **Backend**
