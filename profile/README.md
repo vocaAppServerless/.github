@@ -28,8 +28,8 @@ Lambda 기반 서버리스 단어 암기 웹사이트
 - **Authentication Functions**: Modularize authentication logic in **auth.ts**.
 
 ### 💻Backend Architecture
-#### Lambda Caching and DB Connection Optimization
-- **💾Cold Start and Warm Start Optimization**:
+#### 💾Lambda Caching and DB Connection Optimization
+- **Cold Start and Warm Start Optimization**:
   - Store Secrets and DB connection data in global variables (cachedSecrets, cachedDb).
   - **Reuse the data** during the warm start to improve performance.
 - **DB Connection Management**:
