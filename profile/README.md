@@ -15,17 +15,19 @@ Lambda 기반 서버리스 단어 암기 웹사이트
 
 ## Development
 
-> **⚠️ Note**: This repository is currently a demo version and is continuously being updated. Please refer to the [GitHub repository](https://github.com/nurdworker/rememberme) for the latest updates. **Your contributions and feedback are welcome!**
+> **⚠️ Note**: This repository is currently a demo version and is continuously being updated. Please refer to the [GitHub repository](https://github.com/nurdworker/rememberme) for the latest updates. 
+
+### 🎬 Implementation Demo Video
   
-### Frontend Architecture💻
-#### Global State Management
+### 💻Frontend Architecture
+#### 🌐Global State Management
 - **Redux**: Define global state in **store.ts**.
 - **Static Data & Functions**: Manage static variables, functions, and class constructors in **staticData.ts**.
 - **Redux State Access & Modification Functions**: Store general functions that require access to and modification of Redux state in the useFuncs.ts custom hook.
 - **Queue Management**: Manage the queue using useContext in **QueueContext.tsx**.
 - **Authentication Functions**: Modularize authentication logic in **auth.ts**.
 
-### Backend Architecture💻
+### 💻Backend Architecture
 #### Lambda Caching and DB Connection Optimization
 - **Cold Start and Warm Start Optimization**:
   - Store Secrets and DB connection data in global variables (cachedSecrets, cachedDb).
@@ -38,7 +40,7 @@ Lambda 기반 서버리스 단어 암기 웹사이트
   - **Handlers**: Separate the logic for each request into individual handlers for better management.
   - **Main Handler**: Include **middleware** and **caching logic** in the main handler to handle authentication and data caching efficiently.
 
-### Development/Production Environment Separation
+### ⚙️Development/Production Environment Separation
 **Frontend**
 - **Development Environment**: Manage environment variables using **.env** and run local development with the **npm start**.
 - **Production Environment**: Utilize **AWS S3** and **Parameter Store** for secure and reliable deployment.
@@ -51,7 +53,7 @@ Lambda 기반 서버리스 단어 암기 웹사이트
   - Secure sensitive information management with **AWS Secrets Manager**.
   - Optimize deployment using **Lambda Layers**.
  
-### Auth Authentication and API Request Optimization
+### 🔑Auth Authentication and API Request Optimization
 - **Google OAuth Authentication Logic**:
   - Use **Axios interceptors** to handle token renewal logic.
   - **Reprocess existing requests** to enhance the user experience.
