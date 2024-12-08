@@ -14,8 +14,9 @@ Lambda 기반 서버리스 단어 암기 웹사이트
 - ETC        : Git/GitHub, Slack, Notion
 
 ## Development
-<div style="border: 2px solid #4CAF50; background-color: #f4f4f4; padding: 15px; border-radius: 5px;">
-    <strong>Note:</strong> This repository is currently a demo version and is continuously being updated. Please refer to the <a href="https://github.com/nurdworker/rememberme">GitHub repository</a> for the latest updates.
+
+> **Note**: This repository is currently a demo version and is continuously being updated. Please refer to the GitHub repository for the latest updates.
+
   
 </div>
 ### Frontend Architecture💻
