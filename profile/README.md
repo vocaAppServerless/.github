@@ -54,13 +54,12 @@ Lambda 기반 서버리스 단어 암기 웹사이트
   - Optimize deployment using **Lambda Layers**.
  
 ### 🔑Auth Authentication and API Request Optimization
-- **Google OAuth Authentication Logic**:
-  - Use **Axios interceptors** to handle token renewal logic.
-  - **Reprocess existing requests** to enhance the user experience.
-- **User Authentication Functions**:
-  - Centralize user authentication functions in the **auth.ts** file.
-- **Backend Authentication**:
-  - Use **middleware** on the backend to handle authentication requests centrally.
+- The authentication method used is **Google OAuth**.
+- **Reprocess existing requests** to enhance the user experience. 
+  - **Frontend Authentication**:
+    - Use **Axios interceptors** to handle token renewal logic.
+  - **Backend Authentication**:
+    - Use **middleware** on the backend to handle authentication requests centrally.
 
 
 
