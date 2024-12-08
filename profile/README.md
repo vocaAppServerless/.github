@@ -29,16 +29,16 @@ Lambda 기반 서버리스 단어 암기 웹사이트
 
 ### 💻Backend Architecture
     #### Lambda Caching and DB Connection Optimization
-- **Cold Start and Warm Start Optimization**:
-  - Store Secrets and DB connection data in global variables (cachedSecrets, cachedDb).
-  - **Reuse the data** during the warm start to improve performance.
-- **DB Connection Management**:
-  - Create and reuse one DB connection **per Lambda container**.
-  - tomatically generate the required number of connections based on Lambda's **auto-scaling**, maximizing resource efficiency.
-#### Enhanced Code Reusability
-- **Lambda Templateization**:
-  - **Handlers**: Separate the logic for each request into individual handlers for better management.
-  - **Main Handler**: Include **middleware** and **caching logic** in the main handler to handle authentication and data caching efficiently.
+    - **Cold Start and Warm Start Optimization**:
+      - Store Secrets and DB connection data in global variables (cachedSecrets, cachedDb).
+      - **Reuse the data** during the warm start to improve performance.
+    - **DB Connection Management**:
+      - Create and reuse one DB connection **per Lambda container**.
+      - tomatically generate the required number of connections based on Lambda's **auto-scaling**, maximizing resource efficiency.
+    #### Enhanced Code Reusability
+    - **Lambda Templateization**:
+      - **Handlers**: Separate the logic for each request into individual handlers for better management.
+      - **Main Handler**: Include **middleware** and **caching logic** in the main handler to handle authentication and data caching     efficiently.
 
 ### ⚙️Development/Production Environment Separation
 **Frontend**
