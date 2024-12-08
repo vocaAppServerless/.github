@@ -20,7 +20,7 @@ Lambda 기반 서버리스 단어 암기 웹사이트
 ### 🎬 Implementation Demo Video
   
 ### 💻Frontend Architecture
-#### 🌐Global State Management
+#### 🌐Global Data and Function Management
 - **Redux**: Define global state in **store.ts**.
 - **Static Data & Functions**: Manage static variables, functions, and class constructors in **staticData.ts**.
 - **Redux State Access & Modification Functions**: Store general functions that require access to and modification of Redux state in the useFuncs.ts custom hook.
