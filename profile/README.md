@@ -15,10 +15,10 @@ Lambda 기반 서버리스 단어 암기 웹사이트
 
 ## Development
 
-> **Note**: This repository is currently a demo version and is continuously being updated. Please refer to the GitHub repository for the latest updates.
+> **Note**: This repository is currently a demo version and is continuously being updated. Please refer to the [GitHub repository](https://github.com/nurdworker/rememberme) for the latest updates.
+
 
   
-</div>
 ### Frontend Architecture💻
 #### Global State Management
 - **Redux**: Define global state in **store.ts**.
