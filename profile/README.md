@@ -34,14 +34,14 @@ Lambda 기반 서버리스 단어 암기 웹사이트
 #### Enhanced Code Reusability
 - **Lambda Templateization**:
   - **Handlers**: Separate the logic for each request into individual handlers for better management.
-  - **Middleware**: Centralize the handling of all authentication requests through an **authentication middleware**.
+  - **Main Handler**: Include **middleware** and **caching logic** in the main handler to handle authentication and data caching efficiently.
 
 ### Development/Production Environment Separation
-**Frontend 💻**
+**Frontend**
 - **Development Environment**: Manage environment variables using **.env** and run local development with the **npm start** command.
 - **Production Environment**: Utilize **AWS S3** and **Parameter Store** for secure and reliable deployment.
 
-**Backend 🌐**
+**Backend**
 - **Development Environment**:
   - Manage environment variables with **.env** and **env.json** files.
   - Use **Node.js** and **AWS SAM CLI** for local testing and development.
@@ -55,6 +55,10 @@ Lambda 기반 서버리스 단어 암기 웹사이트
   - **Reprocess existing requests** to enhance the user experience.
 - **User Authentication Functions**:
   - Centralize user authentication functions in the **auth.ts** file.
+- **Backend Authentication**:
+  - Use **middleware** on the backend to handle authentication requests centrally.
+
+
 
 
 ## Infra
