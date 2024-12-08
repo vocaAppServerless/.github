@@ -5,7 +5,7 @@ Lambda 기반 서버리스 단어 암기 웹사이트
 ## Tech Stack
 
 - Frontend   : React
-- Backend:   : Node.js, AWS Lambda, AWS SAM CLI
+- Backend:   : Node.js, AWS SAM CLI
 - Database   : MongoDB
 - CI/CD      : GitHub Actions
 - Cloud(AWS) : Lambda, API Gateway, S3, CloudFront, Route53, WAF, Parameter Store, Secrets Manager, Budgets, Chatbot
