@@ -4,14 +4,49 @@ Lambda 기반 서버리스 단어 암기 웹사이트
 
 ## Tech Stack
 
-- Frontend   :
-- Backend:   :
+- Frontend   : React
+- Backend:   : Node.js, AWS Lambda, AWS SAM CLI
 - Database   : MongoDB
 - CI/CD      : GitHub Actions
 - Cloud(AWS) : Lambda, API Gateway, S3, CloudFront, Route53, WAF, Parameter Store, Secrets Manager, Budgets, Chatbot
 - IaC        : Terraform(HCP Terraform)
 - Logging    : CloudWatch, Logstash, Elasticsearch, Kibana
 - ETC        : Git/GitHub, Slack, Notion
+
+## Development
+
+### Development/Production Environment Separation
+**Frontend 💻**
+- **Development Environment**: Manage environment variables using **.env** and run local development with the **npm start** command.
+- **Production Environment**: Utilize **AWS S3** and **Parameter Store** for secure and reliable deployment.
+
+**Backend 🌐**
+- **Development Environment**:
+  - Manage environment variables with **.env** and **env.json** files.
+  - Use **Node.js** and **AWS SAM CLI** for local testing and development.
+- Production Environment:
+  - Secure sensitive information management with **AWS Secrets Manager**.
+  - Optimize deployment using **Lambda Layers**.
+
+### Auth Authentication and API Request Optimization
+- **Google OAuth Authentication Logic**:
+  - Use Axios interceptors to handle token renewal logic.
+  - Reprocess existing requests to enhance the user experience.
+- **User Authentication Functions**:
+  - Centralize user authentication functions in the **auth.ts** file.
+ 
+### Lambda Caching and DB Connection Optimization
+- **Cold Start and Warm Start Optimization**:
+  - Store Secrets and DB connection data in global variables (cachedSecrets, cachedDb).
+  - Reuse the data during the warm start to improve performance.
+- **DB Connection Management**:
+  - Create and reuse one DB connection per Lambda container.
+  - tomatically generate the required number of connections based on Lambda's auto-scaling, maximizing resource efficiency.
+
+### Enhanced Code Reusability
+- **Lambda Templateization**:
+  - **Handlers**: Separate the logic for each request into individual handlers for better management.
+  - **Middleware**: Centralize the handling of all authentication requests through an authentication middleware.
 
 ## Infra
 
