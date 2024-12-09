@@ -87,21 +87,22 @@ The added warning ensures users understand that **environment variables** are **
 
 ### Architecture
 
-![Architecture](/assets/img/architecture.png)
+![Architecture](https://github.com/vocaAppServerless/.github/blob/main/assets/img/architecture.png?raw=true)
 
 ### CI/CD - [Backend]
 
-![Backend CI/CD](/assets/img/backend_ci_cd.png)
+![Backend CI/CD](https://github.com/vocaAppServerless/.github/blob/main/assets/img/backend_ci_cd.png?raw=true)
 
 ### CI/CD - [Frontend]
 
-![Frontend CI/CD](/assets/img/frontend_ci_cd.png)
+![Frontend CI/CD](https://github.com/vocaAppServerless/.github/blob/main/assets/img/frontend_ci_cd.png?raw=true)
 
 ### Logging
 
 - CloudWatch logs의 Subscription Filter를 사용해 ELK 클러스터로 로그 데이터 전송
 - Kibana 대시보드를 사용해 log group별, status별 로그 확인 가능
 
-![Logging Workflow](/assets/img/log_monitoring.png)
+![Logging Workflow](https://github.com/vocaAppServerless/.github/blob/main/assets/img/log_monitoring.png?raw=true)
 
-![Kibana Dashboard](/assets/img/kibana_dashboard.png)
+![Kibana Dashboard](https://github.com/vocaAppServerless/.github/blob/main/assets/img/kibana_dashboard.png?raw=true)
+
