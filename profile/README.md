@@ -52,7 +52,7 @@ To build the API Gateway and Lambda environment using SAM, run:
 sam build --no-cached
 sam local start-api --env-vars ./env.json --no-cached
 ```
-- env.json for SAM CLI
+**env.json for SAM CLI**
 ```json
 {
   "<lambda-name-1>": {
