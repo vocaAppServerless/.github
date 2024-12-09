@@ -19,47 +19,48 @@ Lambda 기반 서버리스 단어 암기 웹사이트
 
 ### 🎬 Implementation Demo Video
   
-### 💻Frontend Architecture
-#### 🌐Global Data and Function Management
-- **Redux**: Define global state in **store.ts**.
-- **Static Data & Functions**: Manage static variables, functions, and class constructors in **staticData.ts**.
-- **Redux State Access & Modification Functions**: Store general functions that require access to and modification of Redux state in the useFuncs.ts custom hook.
-- **Queue Management**: Manage the queue using useContext in **QueueContext.tsx**.
-- **Authentication Functions**: Modularize authentication logic in **auth.ts**.
+### **Frontent Dev Environment**
+#### React Project Setup and Running Guide
+1. Install Dependencies and run
+Before starting the React project, you need to install the required dependencies. Run the following command:
+```bash
+npm install
+npm start
 
-### 💻Backend Architecture
-#### 💾Lambda Caching and DB Connection Optimization
-- **Cold Start and Warm Start Optimization**:
-  - Store Secrets and DB connection data in global variables (cachedSecrets, cachedDb).
-  - **Reuse the data** during the warm start to improve performance.
-- **DB Connection Management**:
-  - Create and reuse one DB connection **per Lambda container**.
-  - tomatically generate the required number of connections based on Lambda's **auto-scaling**, maximizing resource efficiency.
-#### ♻️Enhanced Code Reusability
-  - **Lambda Templateization**:
-    - **Handlers**: Separate the logic for each request into individual handlers for better management.
-    - **Main Handler**: Include **middleware** and **caching logic** in the main handler to handle authentication and data caching efficiently.
+### **Backend**
+#### **Install AWS SAM CLI**
+- **Windows**
+1. Download the installer from the [AWS SAM CLI Download Page](https://aws.amazon.com/serverless/sam/).
+2. Run the installer and follow the on-screen instructions.
+3. Add the installation path (usually `C:\Program Files\Amazon\AWSSAMCLI\bin`) to your `PATH` environment variable if not automatically configured.
+- **macOS**
+1. Install using Homebrew:
+   brew install aws/tap/aws-sam-cli
 
-### ⚙️Development/Production Environment Separation
-**Frontend**
-- **Development Environment**: Manage environment variables using **.env** and run local development with the **npm start**.
-- **Production Environment**: Utilize **AWS S3** and **Parameter Store** for secure and reliable deployment.
+Invoke Individual Lambda Function with SAM CLI
+- sam local invoke TestFunction --env-vars ./env.json --event ./event.json
 
-**Backend**
-- **Development Environment**:
-  - Manage environment variables with **.env** and **env.json** files.
-  - Use **Node.js** and **AWS SAM CLI** for local testing and development.
-- **Production Environment**:
-  - Secure sensitive information management with **AWS Secrets Manager**.
-  - Optimize deployment using **Lambda Layers**.
- 
-### 🔑Auth Authentication and API Request Optimization
-- The authentication method used is **Google OAuth**.
-- **Reprocess existing requests** to enhance the user experience. 
-  - **Frontend Authentication**:
-    - Use **Axios interceptors** to handle token renewal logic.
-  - **Backend Authentication**:
-    - Use **middleware** on the backend to handle authentication requests centrally.
+#### Lambda Function Setup and Testing with SAM CLI
+**Build and Test API Gateway with Lambda**
+To build the API Gateway and Lambda environment using SAM, run:
+```bash
+sam build --no-cached
+sam local start-api --env-vars ./env.json --no-cached
+
+- env.json for SAM CLI
+```json
+{
+  "<lambda-name-1>": {
+    "ENV_FIRST": "...",
+    "ENV_SECOND": "///"
+  },
+  "<lambda-name-2>": {
+    "ENV_FIRST": "...",
+    "ENV_SECOND": "///"
+  }
+}
+
+The added warning ensures users understand that **environment variables** are **crucial** for the proper functioning of Lambda functions and must be specified correctly in the `env.json` file.
 
 
 
