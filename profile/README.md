@@ -26,6 +26,7 @@ Before starting the React project, you need to install the required dependencies
 ```bash
 npm install
 npm start
+```
 
 ### **Backend**
 #### **Install AWS SAM CLI**
@@ -35,10 +36,14 @@ npm start
 3. Add the installation path (usually `C:\Program Files\Amazon\AWSSAMCLI\bin`) to your `PATH` environment variable if not automatically configured.
 - **macOS**
 1. Install using Homebrew:
+   ```bash
    brew install aws/tap/aws-sam-cli
+   ```
 
 Invoke Individual Lambda Function with SAM CLI
-- sam local invoke TestFunction --env-vars ./env.json --event ./event.json
+```bash
+sam local invoke TestFunction --env-vars ./env.json --event ./event.json
+```
 
 #### Lambda Function Setup and Testing with SAM CLI
 **Build and Test API Gateway with Lambda**
@@ -46,7 +51,7 @@ To build the API Gateway and Lambda environment using SAM, run:
 ```bash
 sam build --no-cached
 sam local start-api --env-vars ./env.json --no-cached
-
+```
 - env.json for SAM CLI
 ```json
 {
@@ -59,7 +64,7 @@ sam local start-api --env-vars ./env.json --no-cached
     "ENV_SECOND": "///"
   }
 }
-
+```
 The added warning ensures users understand that **environment variables** are **crucial** for the proper functioning of Lambda functions and must be specified correctly in the `env.json` file.
 
 
