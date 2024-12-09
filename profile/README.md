@@ -25,16 +25,22 @@ Lambda 기반 서버리스 단어 암기 웹사이트
 ```bash
 git clone https://github.com/vocaAppServerless/frontend.git
 ```
-3. Install Dependencies and run
+2. Install Dependencies and run
 Before starting the React project, you need to install the required dependencies. Run the following command:
 ```bash
 npm install
+```
+3. Start the Application
+```bash
 npm start
 ```
 
 ### **Backend**
 #### Preperation
 1. Clone our project repository
+```bash
+git clone https://github.com/vocaAppServerless/backend.git
+```
 2. Install AWS SAM CLI
 - **Windows**
   - Download the installer from the [AWS SAM CLI Download Page](https://aws.amazon.com/serverless/sam/).
@@ -45,9 +51,7 @@ npm start
    ```bash
    brew install aws/tap/aws-sam-cli
    ```
-
-#### Lambda Function Setup and Testing with SAM CLI
-**Build and Test API Gateway with Lambda**
+3. Build and Test API Gateway with Lambda
 To build the API Gateway and Lambda environment using SAM, run:
 ```bash
 sam build --no-cached
