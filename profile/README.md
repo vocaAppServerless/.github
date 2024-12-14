@@ -114,7 +114,14 @@ The added warning ensures users understand that **environment variables** are **
 
 ![Kibana Dashboard](https://github.com/vocaAppServerless/.github/blob/main/assets/img/kibana_dashboard.png?raw=true)
 
-### Alarm
+### WAF Alarm
 
 ![WAF Alarm Workflow](https://github.com/vocaAppServerless/.github/blob/main/assets/img/waf_alarm_workflow.jpg?raw=true)
+
+![WAF Alarm](https://github.com/vocaAppServerless/.github/blob/main/assets/img/waf_alarm.png?raw=true)
+
+### Budget Alarm
+
 ![Budget Alarm Workflow](https://github.com/vocaAppServerless/.github/blob/main/assets/img/budget_alarm_workflow.jpg?raw=true)
+
+![Budget Alarm](https://github.com/vocaAppServerless/.github/blob/main/assets/img/budgets_alarm.png?raw=true)
