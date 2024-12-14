@@ -1,6 +1,6 @@
 # Remember Me
 
-Lambda 기반 서버리스 단어 암기 웹사이트
+A serverless vocabulary memorization website built on AWS Lambda.
 
 ## Tech Stack
 
@@ -15,13 +15,16 @@ Lambda 기반 서버리스 단어 암기 웹사이트
 
 ## Development
 
-> **⚠️ Note**: This repository is currently a demo version and is continuously being updated. Please refer to the [GitHub repository](https://github.com/nurdworker/rememberme) for the latest updates. 
+> **⚠️ Note**: This repository is currently a demo version and is continuously being updated. Please refer to the [GitHub repository](https://github.com/nurdworker/rememberme) for the latest updates.  
 
-### 🎬 Implementation Demo Video: 
+### 🎬 Implementation Demo Video:  
+
 - <https://youtu.be/y15djTDnXYg>
   
 ### **Frontent Dev Environment**
+
 #### React Project Setup and Running Guide
+
 1. **Clone our project repository**
 ```bash
 git clone https://github.com/vocaAppServerless/frontend.git
@@ -53,6 +56,7 @@ git clone https://github.com/vocaAppServerless/backend.git
    ```
 3. **Build and Test API Gateway with Lambda**
 To build the API Gateway and Lambda environment using SAM, run:
+
 ```bash
 sam build --no-cached
 sam local start-api --env-vars ./env.json --no-cached
@@ -70,14 +74,12 @@ sam local start-api --env-vars ./env.json --no-cached
   }
 }
 ```
+
 The added warning ensures users understand that **environment variables** are **crucial** for the proper functioning of Lambda functions and must be specified correctly in the `env.json` file.
-
-
-
 
 ## Infra
 
-**HCP Terraform**을 **VCS**(Version Control System)와 연동하여 코드를 기반으로 AWS 리소스를 프로비저닝하고 관리
+**HCP Terraform** is integrated with a **VCS** (Version Control System) to provision and manage AWS resources through code. Using Infrastructure as Code (IaC) principles, all AWS resources are defined and versioned, ensuring consistency, repeatability, and ease of management.
 
 ### Demo
 
@@ -99,10 +101,9 @@ The added warning ensures users understand that **environment variables** are **
 
 ### Logging
 
-- CloudWatch logs의 Subscription Filter를 사용해 ELK 클러스터로 로그 데이터 전송
-- Kibana 대시보드를 사용해 log group별, status별 로그 확인 가능
+- Leveraging CloudWatch Logs Subscription Filters to send log data to the ELK stack.
+- Using the Kibana dashboard, you can monitor logs by log group, status, and more, gaining insights into application performance and issues.
 
 ![Logging Workflow](https://github.com/vocaAppServerless/.github/blob/main/assets/img/log_monitoring.png?raw=true)
 
 ![Kibana Dashboard](https://github.com/vocaAppServerless/.github/blob/main/assets/img/kibana_dashboard.png?raw=true)
-
