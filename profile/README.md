@@ -85,11 +85,11 @@ The added warning ensures users understand that **environment variables** are **
 
 ### Demo
 
-**WAF Rule & Slack Alarm Demo** 
+**WAF Rule & Slack Alarm Demo**  
 
 - <https://youtu.be/S6AAgXVevEw?si=OiLR3wfE36uTpHYU>
 
-**HCP Terraform Demo** 
+**HCP Terraform Demo**  
 
 - <https://youtu.be/zg9rhHcf8w0?si=A6rGs7k0rcp9nD0u>
 
@@ -113,3 +113,8 @@ The added warning ensures users understand that **environment variables** are **
 ![Logging Workflow](https://github.com/vocaAppServerless/.github/blob/main/assets/img/log_monitoring.png?raw=true)
 
 ![Kibana Dashboard](https://github.com/vocaAppServerless/.github/blob/main/assets/img/kibana_dashboard.png?raw=true)
+
+### Alarm
+
+![WAF Alarm Workflow]()
+![Budget Alarm Workflow]()
