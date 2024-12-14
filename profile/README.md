@@ -83,9 +83,13 @@ The added warning ensures users understand that **environment variables** are **
 
 ### Demo
 
-**WAF Rule & Slack Alarm Demo** - <https://youtu.be/S6AAgXVevEw?si=OiLR3wfE36uTpHYU>
+**WAF Rule & Slack Alarm Demo** 
 
-**HCP Terraform Demo** - <https://youtu.be/zg9rhHcf8w0?si=A6rGs7k0rcp9nD0u>
+- <https://youtu.be/S6AAgXVevEw?si=OiLR3wfE36uTpHYU>
+
+**HCP Terraform Demo** 
+
+- <https://youtu.be/zg9rhHcf8w0?si=A6rGs7k0rcp9nD0u>
 
 ### Architecture
 
