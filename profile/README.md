@@ -17,7 +17,7 @@ A serverless vocabulary memorization website built on AWS Lambda.
 
 ## Development
 
-> **⚠️ Note**: This repository is currently a demo version and is continuously being updated. Please refer to the [Frontend GitHub repository](https://github.com/nurdworker/rememberme-advanced-front)[Backend GitHub repository]([https://github.com/nurdworker/rememberme](https://github.com/nurdworker/rememberme-advanced-back) for the latest updates.  
+> **⚠️ Note**: This repository is currently a demo version and is continuously being updated. Please refer to the [Frontend GitHub repository](https://github.com/nurdworker/rememberme-advanced-front), [Backend GitHub repository](https://github.com/nurdworker/rememberme-advanced-back) for the latest updates.  
 
 ### 🎬 Implementation Demo Video:  
 
